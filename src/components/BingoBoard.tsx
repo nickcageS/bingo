@@ -68,13 +68,7 @@ class BingoBoard extends React.Component<BoardProps, BoardState> {
 
 
     isHidden(i: number) {
-        if (this.getStartTiles().includes(i)) {
-            return false;
-        }
-
-        return !this.getAdjacentTiles(i)
-            .map(tile => this.state.counters[tile])
-            .some(counter => counter > 0)
+        return false
     }
 
     getStartTiles() {
