@@ -10,7 +10,7 @@ function BingoPage() {
 
     const onClick = () => setBoardRevealed(true);
 
-    const [boardRevealed, setBoardRevealed] = useState(false);
+    const [boardRevealed, setBoardRevealed] = useState(true);
 
     const bingoContent = boardRevealed? <BingoCard/> : <ClickToReveal onClick = {onClick} />
 
