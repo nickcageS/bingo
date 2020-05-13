@@ -8,4 +8,5 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+  document.title = "Nickcageswag's SM64 Bingo";
 );
